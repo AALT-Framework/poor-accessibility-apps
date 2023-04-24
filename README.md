@@ -1,5 +1,5 @@
 # poor-accessibility-apps
-Samples of apps to improve accessibility
+Set of apps samples to improve accessibility
 
 This repository is a partial fork of [basic-android-accessibility](https://github.com/googlecodelabs/android-accessibility), just adding test project folder to the Counter app. 
 

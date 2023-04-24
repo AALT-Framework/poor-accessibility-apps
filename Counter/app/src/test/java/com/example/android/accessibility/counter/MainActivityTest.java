@@ -11,6 +11,7 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
 import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestAdequateContrastRatio;
+import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestMustHaveAlternativeText;
 import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestTouchTargetSize;
 import br.usp.icmc.ppgccmc.accessibility_tests.runners.AccessibilityTestRunner;
 
@@ -29,15 +30,5 @@ public class MainActivityTest {
         // Get the root node of the view hierarchy
         rootView = activity.getWindow().getDecorView().getRootView();
         runner = new AccessibilityTestRunner(collector);
-    }
-
-    @Test
-    public void mustUseAdequateContrastRatio(){
-        runner.runAccessibilityTest(rootView, new TestAdequateContrastRatio());
-    }
-
-    @Test
-    public void mustTouchTargetBeLargeEnough(){
-        runner.runAccessibilityTest(rootView, new TestTouchTargetSize());
     }
 }

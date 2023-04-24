@@ -64,7 +64,7 @@
 
         <!-- TODO: add contentDescription to fix missing label issue -->
         <!-- TODO: add padding to expand touchable area -->
-        <ImageView
+        <ImageButton
             android:id="@+id/add_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
 
         <!-- TODO: add contentDescription to fix missing label issue -->
         <!-- TODO: add padding to expand touchable area -->
-        <ImageView
+        <ImageButton
             android:id="@+id/subtract_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,22 +1,29 @@
 # poor-accessibility-apps
-Set of apps samples to improve accessibility
 
-This repository is a partial fork of [basic-android-accessibility](https://github.com/googlecodelabs/android-accessibility), just adding test project folder to the Counter app. 
+This set of app samples contains a number of accessibility issues that need to be fixed.
 
-Follow the instructions to add automated accessibility tests for the Counter app:
+This repository is a partial fork of [basic-android-accessibility](https://github.com/googlecodelabs/android-accessibility), with the addition of a test project folder for the Counter app.
 
-1 - Clone this repository and open Counter app in Android Studio
-2 - Add it in your root build.gradle at the end of repositories:
-```
-allprojects {
-  repositories {
-	...
-	maven { url 'https://jitpack.io' }
+## What to do
+
+To add automated accessibility tests for the Counter app, follow these instructions:
+
+1. Clone this repository and open Counter app in Android Studio.
+
+2. Add it in your root `build.gradle` file, at the end of repositories.
+
+```groovy
+  allprojects {
+    repositories {
+    ...
+    maven { url 'https://jitpack.io' }
   }
 }
 ```
-3 - Change app build.gradle to set testOptions and add test dependencies for Roboletric and AATK and sync 
-```
+
+3. Configure your app-level `build.gradle` file for Robolectric and AATK testing by updating the `testOptions` and adding the necessary `dependencies`. After making these changes, sync your project to ensure they take effect.
+
+```groovy
 android{
     ...
     testOptions {
@@ -33,7 +40,9 @@ dependencies {
     ...
 }
 ```
-4 - Create your own Java Test File class (or edit MainActivityTest), and set up like this:
+
+4. Create your own Java test file class (or edit `MainActivityTest`) and set it up as follows:
+
 ```java
 @RunWith(RobolectricTestRunner.class)
 public class MainActivityTest {
@@ -42,9 +51,6 @@ public class MainActivityTest {
 
     @Rule
     public ErrorCollector collector = new ErrorCollector();
-
-    @Rule
-    public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
 
     @Before
     public void setUp() {
@@ -56,7 +62,9 @@ public class MainActivityTest {
     }
 }
 ```
-5 - Write your first test, for example, to test contrast ratio
+
+5. To write your first test, you can start by testing the contrast ratio. Here's an example test that you can use as a starting point:
+
 ```java
   @Test
     public void mustUseAdequateContrastRatio(){

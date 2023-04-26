@@ -13,8 +13,8 @@ To add automated accessibility tests for the Counter app, follow these instructi
 2. Add it in your root `build.gradle` file, at the end of repositories.
 
 ```groovy
-  allprojects {
-    repositories {
+allprojects {
+  repositories {
     ...
     maven { url 'https://jitpack.io' }
   }

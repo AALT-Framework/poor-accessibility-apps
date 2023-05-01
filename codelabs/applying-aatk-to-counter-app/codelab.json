@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2023-05-01T15:20:55-03:00",
+  "id": "applying-aatk-to-counter-app",
+  "duration": 11,
+  "title": "Apply the Automated Accessibility Test Kit (AATK) to the Counter App Project",
+  "authors": "Anderson Canale Garcia",
+  "summary": "This pratice involves setting up the necessary dependencies and writing accessibility tests using the AATK framework. By running these tests and analyzing the results, you can identify and fix any accessibility issues in your app.",
+  "source": "CounterAccessible.md",
+  "theme": "",
+  "status": null,
+  "category": [
+    "android"
+  ],
+  "tags": [
+    "beginner",
+    "developers",
+    "testers"
+  ],
+  "url": "applying-aatk-to-counter-app"
+}
